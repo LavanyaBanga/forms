@@ -1,0 +1,110 @@
+
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <title>Forms</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, rgba(252, 183, 234, 0.935), rgba(255, 204, 128, 0.935));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Playwrite ES Deco", cursive;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .heading {
+            text-shadow: whitesmoke 0px 0px 18px;
+            box-shadow: 0px 2px 18px white;
+            font-size: 30px;
+            color: rgb(44, 114, 77);
+            margin: 0;
+            padding: 20px;
+            font-family: cursive;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 0px 8px white;
+            max-width: 500px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .govinda {
+            font-size: 20px;
+            color: rgb(154, 37, 60);
+            text-shadow: white;
+            font-family: italic;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: rgb(44, 114, 77);
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        .nav-links {
+            list-style-type: none; /* Remove bullets */
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" class="form-container">
+        <header>
+            <div>
+                <h1 class="heading">Response Form</h1>
+                
+            </div>
+        </header>
+        <div class="govinda">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required />
+            <br><br>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+            <br><br>
+            <label>Age:</label>
+            <input type="number" id="age" name="age" min="0" placeholder="Enter your age" />
+            <br><br>
+            <label>Date:</label>
+            <input type="date" id="date" name="date" />
+            <br><br>
+            <label>Agree:</label>
+            <input type="checkbox" id="agree" name="agree" />
+            <br><br>
+            <label>Gender:</label><br>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" />
+            <br><br>
+            <label>Comment:</label>
+            <textarea placeholder="What are your views?" rows="5"></textarea>
+            <br><br>
+            <label>Course</label>
+            <select>
+                <option>Select Course</option>
+                <option>MBA</option>
+                <option>Btech</option>
+                <option>BBA</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
